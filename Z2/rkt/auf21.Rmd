@@ -1,0 +1,16 @@
+---
+output: pdf_document
+---
+	1. (+ (string-length "Racket")(- 17 4))
+
+	2. (* 2 (string-length (string-append "Die Zahl ist " 5)))
+	   > Laufzeitfehler: `string-append` erwartet den Datentyp String, `5` ist aber kein String, sondern integer
+
+	3. (/ (image-width (circle 50 "solid" "red")) 2)
+	   > (/ 100 2)
+	   > ( 50)
+
+	4. (/ (+ 23 7) (- 16 (* 4 4)))
+	   > (/ 30 (- 16 16))
+	   > (/ 30 0)
+	   > Laufzeitfehler: Division durch 0

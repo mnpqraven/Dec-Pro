@@ -1,0 +1,22 @@
+---
+output: pdf_document
+---
+```
+(define (MakeCircle color)(circle 20 "solid" color))
+(define WIDTH 100)
+(define HEIGHT 100)
+(define CenterWidth (/ WIDTH 2))
+(define CenterHeight (/ HEIGHT 2))
+(define SCENE-EMPTY (empty-scene WIDTH HEIGHT))
+
+
+(define (draw color)
+(place-image (MakeCircle color) 0 0
+(place-image (MakeCircle color) WIDTH 0
+(place-image (MakeCircle color) WIDTH HEIGHT
+(place-image (MakeCircle color) 0 HEIGHT
+(place-image (MakeCircle color) CenterWidth CenterHeight
+SCENE-EMPTY)))))
+)
+(draw "red")
+```

@@ -1,0 +1,4 @@
+---
+output: png_document
+---
+\centerline{\includegraphics[width=1\textwidth]{auf25.png}}
