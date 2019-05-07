@@ -1,0 +1,14 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-abbr-reader.ss" "lang")((modname Auf6-1) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
+;Aufgabe 6-1
+;a
+
+; (Number -> Number) Number -> Number
+; Zählt die sum(f(k)) von k=1 bis k=n zusammen
+(chech-expect (sumTo add1 2) 5)
+(check-expect (sumTo sub1 3) 3)
+
+(define (sumTo f n)(cond
+                     [(= 0 n)0]
+                     [else (+ (f n) (sumTo f(sub1 n)))]))

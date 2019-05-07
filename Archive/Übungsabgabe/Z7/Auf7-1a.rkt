@@ -1,0 +1,30 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname Auf7-1a) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #t #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
+;Aufgabe 7-1
+;a
+;Symbol -> (Number Number -> Number)
+;ordnet einem Symbol den passenden Operator zu
+;geeigneter check fehlt - check expect kann keine fkt. vergleichen.
+(define (symbol-to-op s)
+  (match s
+    ['+ +]
+    ['- -]
+    ['* *]
+    ['/ /]
+    ))
+
+;S-Expression -> Number
+;wertet den übergebenen Baum (in Form einer S-Expression) zu einer Zahl aus
+(check-expect (evalTree '(((4 * 5) - (3 / 2)) + (6 * 7))) 60.5)
+(check-expect (evalTree '((8 + 8)+((49 / 7)-(4 / 2)))) 21)
+(check-expect (evalTree '(4 * 5))20)
+(check-expect (evalTree '((4 - 2) + 5))7)
+(check-expect (evalTree '(5 - (4 - 2)))3)
+
+(define (evalTree t)
+  (match t
+    [(list x s y)((symbol-to-op s)(evalTree x)(evalTree y))]
+    [X X]
+    ))
+

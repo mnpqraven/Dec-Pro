@@ -1,0 +1,11 @@
+Korrektur 1 Hoang Tung Truong
+12 Punkte
+ 
+Aufgabe 3 4/4
+
+Aufgabe 4 4/4
+solche Aufgaben bitte in Zukunft als pdf abgeben
+Achtung ab dem nächsten Zettel bei den Reduktionen auf die Reihenfolge achten: (string->number „4“) wird z.B. ausgewertet vor (- 33 (string-length „Spoilers“))
+
+Aufgabe 5 4/4
+die center-Funktion hat das Problem, dass der Hintergrund kleiner werden kann als der Vordergrund. Da das aber nicht explizit in der Aufgabe stand kein Abzug
