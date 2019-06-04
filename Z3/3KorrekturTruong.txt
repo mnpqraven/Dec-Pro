@@ -1,0 +1,15 @@
+Zettel 3 Korrektur Truong
+
+Bitte die nächsten Zettel unbedingt als Gruppe abgeben. Einzelabgaben sind super aufwändig zu korrigieren und es entspricht nicht der Vorgabe
+
+
+ Punkte
+
+Aufgabe 3.1 4/4
+Radius und Height mussten an der Stellenicht als Datentyp definiert werden.
+Implementierung ok, aber ihr solltet das voreingebaute pi verwenden, nicht selber definieren
+
+
+Aufgabe 3.2 4/4
+
+Aufgabe 3.4 4/4
