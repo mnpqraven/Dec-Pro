@@ -1,0 +1,24 @@
+Korrektur 5 Truong Klappich
+6 Punkte
+
+Aufgabe 1 1/4 Punkte
+Bitte gebt solche Aufgaben (Reduktionen, Äquivalenzen, Beweise) als pdf ab. Das ist zwar zum Teil Code, aber es ist trotzdem als Textaufgabe gedacht.
+Regelnamen fehlen zum Teil oder sind unpräzise. Dieses mal gibt es 0,5 Punkte global Abzug, in Zukunft müsst ihr mit mehr rechnen. Bitte verwendet die Abkürzungen aus dem pdf (KONG, FUN, COND-TRUE, PRIM etc)
+am Anfang fehlt ein const. Euer erster Schritt soll Fun sein, aber ihr müsst bei Fun den ganzen Ausdruck einmal aufschreiben ohne Abkürzungen. Außerdem habt ihr hier nicht korrekt eingesetzt (Beispiel: [(string=? (hero-race <make-hero "The Doctor" "Unkown"
+,! "Timelord">) "Martian") (string-append
+(hero-supername <make-hero "The Doctor" "Unkown"
+"Timelord">) " is " (hero-realname <make-hero "The
+Doctor" "Unkown" "Timelord">)
+,!
+,!
+" from Mars.")])
+
+Bei "(hero-race hero) wird zunächst zu "Timelord" reduziert" sind zu viele Schritte auf einmal. Außer bei KONG sollt ihr bitte immer nur einen gleichzeitig machen, sofern nicht explizit anders angegeben in der Aufgabenstellung.
+Hierin versteckt sich KONG+STRUCT-SELECT und KONG+PRIM.
+cond-false ist korrekt. Bis einschließlich 3. analog. Bei viertens auch analog, cond-true ist hier auch korrekt angewendet.
+Danach sind wieder zu viele Schritte auf einmal (2x KONG,STRUCT-SELECT + 1x PRIM)
+
+Aufgabe 2 fehlt 0/4
+
+Aufgabe 3 4+1/4
+coole Animation!

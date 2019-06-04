@@ -1,0 +1,2 @@
+- Ich benutze Linux, deswegen sind die Screenshots anders als Windows shell
+- Aufgabe 3.2 heißt age.rkt
