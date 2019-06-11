@@ -1,0 +1,20 @@
+Korrektur Zettel 6 Truong Klappich
+
+4/12 Punkten
+
+Aufgabe 2 0/4
+Code muss im geeigneten Format abgegeben werden (.rkt-Datei, siehe Abgaberichtlinien)
+Wenn ihr konkrete Fragen zu eurer Abgabe habt, könnt ihr sie mir gerne im Tutorium stellen.
+
+Aufgabe 3 4/4
+a) 1
+b) 1
+für den Basisfall hätte man einfach die a benutzen können, aber ist korrekt
+l212 eq. (cons head lst1) gehört strenggenommen nicht in die Annamhe, aber ist ok
+für EFUN braucht man nicht EKONG, da man hier alles ersetzt. Das ist wichtig!
+c) 1 bei STRUCT-predtrue muss ein ERED dazu (Regel ohne E vorne -> man wechselt in den Reduktionskontext -> man braucht ERED).
+Ihr lieben, das ist keine Induktion: Ihr benutzt nirgendwo die Annahme. Es ist ein ganz normaler Beweis, deswegen braucht ihr auch keine Induktionsannahme und Basisfall. Es war aber hier ok und besser, es ohne Induktion zu machen; ich mag euch dafür aber nicht die Hälfte abziehen, deswegen gibt es volle Punkte.
+d) 1 am Ende von (i) hättet ihr c) bentzen können, um euch (ii) zu sparen, aber man hätte c) auch weiter vorne schon benutzen können, dann wäre der Beweis kürzer geworden. Aber so ist auch korrekt. Streng genommen müsstet ihr am Ende von (i) EKOMM benutzen, um auf der rechten Seite weiter machen zu dürfen.
+
+Aufgabe 4 0/4
+Code nicht im .rkt-Format
