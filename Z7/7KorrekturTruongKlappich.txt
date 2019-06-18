@@ -1,0 +1,15 @@
+Korrektur Zettel 7
+ 8,5/12 Punkten
+Truong Klappich
+
+Aufgabe 1 2/4
+a) 1/1
+b) 1/3 dx ist korrekt berechnet, aber keine lokale Definition, sondern stattdessen eine Hilfsfunktion. Integral wird nicht korrekt berechnet. Tests und Signatur ok
+
+Aufgabe 2 4/4
+
+Aufgabe 3 2,5/4
+a) 1
+b) 1
+c) 0,5 forall stimmt nicht: Es gibt zurück, ob die Bedingung für das erste (also letzte im foldr-Durchlauf, der ja von rechts anfängt) Element stimmt. Da müsste noch eine Verundung rein.
+d) 0 kein neues foldr und lambda in dieser Teilaufgabe, was gefordert war. Daher gibt es keine Punkte. Aber elegant gelöst.
